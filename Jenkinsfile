@@ -17,7 +17,8 @@ node {
        sh "s2i build . seldonio/seldon-core-s2i-python3 ${imageName}" 
 
     stage "Push"
-
+    
+        sh "docker login -u ksr1729 -p pass123!"
         sh "docker push ${imageName}"
 
 }
