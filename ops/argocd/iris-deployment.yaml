@@ -14,7 +14,7 @@ spec:
         app: iris-classification
     spec:
       containers:
-      - image: ksr1729/iris_classification:latest
+      - image: ksr1729/iris_classification:e616307
         name: iris-classification
         ports:
         - containerPort: 80
