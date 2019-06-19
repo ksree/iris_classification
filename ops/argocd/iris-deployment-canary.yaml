@@ -1,1 +1,22 @@
-
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: iris-classification-canary
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app: iris-classification
+      env: canary
+  template:
+    metadata:
+      labels:
+        app: iris-classification
+        env: canary
+    spec:
+      containers:
+      - image: ksr1729/iris_classification:e616307
+        name: iris-classification
+        ports:
+        - containerPort: 80
