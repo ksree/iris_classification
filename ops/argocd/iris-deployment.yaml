@@ -17,7 +17,7 @@ spec:
         env: prod
     spec:
       containers:
-      - image: ksr1729/iris_classification:e616307
+      - image: ksr1729/iris_classification:latest
         name: iris-classification
         ports:
         - containerPort: 80
