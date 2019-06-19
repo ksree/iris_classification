@@ -8,4 +8,4 @@ spec:
     targetPort: 5000
   selector:
     app: iris-classification
-    selector: canary
+    env: canary
