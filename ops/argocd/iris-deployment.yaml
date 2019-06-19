@@ -11,6 +11,7 @@ spec:
       env: prod
   template:
     metadata:
+      name: iris-classification
       labels:
         app: iris-classification
         env: prod
