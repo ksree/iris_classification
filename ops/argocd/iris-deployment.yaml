@@ -8,10 +8,12 @@ spec:
   selector:
     matchLabels:
       app: iris-classification
+      label: prod
   template:
     metadata:
       labels:
         app: iris-classification
+        label: prod
     spec:
       containers:
       - image: ksr1729/iris_classification:e616307
