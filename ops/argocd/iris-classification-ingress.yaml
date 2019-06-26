@@ -4,5 +4,5 @@ metadata:
   name: app-ingress
 spec:
   backend:
-    serviceName: kubeapp-production-service
-    servicePort: 80
+    serviceName: iris-classification
+    servicePort: 5000
