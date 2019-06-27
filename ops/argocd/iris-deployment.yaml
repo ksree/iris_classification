@@ -24,7 +24,7 @@ spec:
             command:
             - "/bin/sh"
             - "-c"
-            - "ping"
+            - "ping -c 2 google.com"
           initialDelaySeconds: 5
           periodSeconds: 5
         ports:
