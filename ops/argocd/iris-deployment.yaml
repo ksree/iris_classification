@@ -27,5 +27,13 @@ spec:
             - "ping -c 2 google.com"
           initialDelaySeconds: 5
           periodSeconds: 5
+        livenessProbe:
+          exec:
+            command:
+            - "/bin/sh"
+            - "-c"
+            - "ping -c 2 google.com"
+          initialDelaySeconds: 5
+          periodSeconds: 5  
         ports:
           - containerPort: 80
