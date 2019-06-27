@@ -22,7 +22,9 @@ spec:
         readinessProbe:
           exec:
             command:
-            - ping
+            - "/bin/sh"
+            - "-c"
+            - "ping"
           initialDelaySeconds: 5
           periodSeconds: 5
         ports:
