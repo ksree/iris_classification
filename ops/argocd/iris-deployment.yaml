@@ -24,7 +24,7 @@ spec:
             command:
             - cat
             - /tmp/healthy
-            initialDelaySeconds: 5
-            periodSeconds: 5
-          ports:
-            - containerPort: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        ports:
+          - containerPort: 80
