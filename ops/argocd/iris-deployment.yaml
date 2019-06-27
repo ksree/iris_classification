@@ -22,8 +22,7 @@ spec:
         readinessProbe:
           exec:
             command:
-            - cat
-            - /tmp/healthy
+            - ping
           initialDelaySeconds: 5
           periodSeconds: 5
         ports:
